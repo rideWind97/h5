@@ -1,0 +1,76 @@
+// 全局样式文件
+@import 'fix-ui.less';
+
+#root {
+  font-family: 'Avenir';
+  font-size: 14px;
+  height: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.App {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.ka-wrapper,
+.ka-content {
+  height: 100%;
+}
+
+.feed-img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.author-avatar {
+  margin-right: 6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.author-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+  color: #333;
+  font-size: 12px;
+
+  .author {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 12px;
+  }
+
+  .name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.EmojiPickerReact {
+  .epr-header-overlay,
+  .epr-preview {
+    display: none !important;
+  }
+}
+
+.fz20px {
+  font-size: 20px;
+}
